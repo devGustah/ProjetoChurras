@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3px;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+
+label {
+    font-size: 15px;
+}
+
+input {
+    font-size: 15px;
+}
+
+button {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: white;
+}
+
+.text-content {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.text-content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-content img {
+    max-width: 50%;
+}
+.box-calculo {
+    background-color: rgb(185, 84, 81);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    text-align: center;
+}
+
+.box-calculo img {
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 7px;
+    float: left;
+}
+
+.form {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.form .input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.box-calculo label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+.box-calculo input {
+    width: 100%;
+    height: 45px;
+    background-color: aliceblue;
+    border: 2px solid #F27F77;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box-calculo input::placeholder {
+    color: gray;
+}
+
+.box-calculo button {
+    width: 140px;
+    height: 45px;
+    background: rgb(185, 84, 81);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.box-calculo button:hover {
+    background-color: #701B15;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+}
+
+.result-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    width: 0 auto;
+    margin-top: 20px;
+}
+
+.result-block {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.result-block img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.result-block p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    * {
+        overflow: hidden;
+    }
+
+.text-content h1 {
+    font-size: 30px;
+    width: 500px;
+}
+
+.box-calculo {
+    height: 100vh;
+    background: rgb(255, 128, 128);
+    border-radius: 0px;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0;
+}
+}
+
+@media (max-width: 700px) {
+    #resultado {
+        width: 90%;
+    }
+}
+
+.result-info {
+    margin-bottom: 0rem;
+}
+
+.result-block {
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
